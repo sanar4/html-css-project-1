@@ -8,3 +8,8 @@ body {
   font-family: "Roboto", sans-serif;
   text-align: center;
 }
+
+h1 {
+  color: #5c940d;
+  padding: 10px;
+}
