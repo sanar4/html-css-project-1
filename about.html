@@ -43,58 +43,50 @@
           <li><a href="location.html">Location</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="booking.html">Book a Table</a></li>
-          <li><a href="about.html">About</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h1>Blog</h1>
-      <article>
-        <h2>20% off this weekend</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, ut.
-        </p>
-      </article>
-      <article>
-        <h2>Our new menu</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum,
-          itaque?
-        </p>
-      </article>
-
-      <h1>Sign Up</h1>
-      <form>
-        <div>
-          <label for="user_first_name">First Name</label> <br />
-          <input type="text" id="user_first_name" name="user_first_name" />
-        </div>
-        <div>
-          <label for="user_last_name">Last Name</label> <br />
-          <input type="text" id="user_last_name" name="user_last_name" />
-        </div>
-        <div>
-          <label for="user_email">Email</label> <br />
-          <input type="email" id="user_email" name="user_email" />
-        </div>
-        <div>
-          <label for="user_password">Enter Password</label> <br />
-          <input type="password" id="user_password" name="user_password" />
-        </div>
-        <div>
-          <label for="user_confirm_password">Confirm Password</label> <br />
-          <input
-            type="password"
-            id="user_confirm_password"
-            name="user_confirm_password"
-          />
-        </div>
-        <div>
-          <button type="submit">Sign Up</button>
-        </div>
-      </form>
+      <h1>About</h1>
+      <video width="320" height="240" controls muted>
+        <source src="video.mp4" type="video/mp4" />
+      </video>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, aut.
+      </p>
       <br />
+      <audio loop controls>
+        <source src="music.ogg" type="audio/ogg" />
+      </audio>
+      <br />
+      <h1>Video with Rating</h1>
+      <video controls width="320" height="240">
+        <source src="video.mp4" type="video/mp4" />
+      </video>
+
+      <form method="POST">
+        <div>
+          <label for="rating">Rating</label>
+          <input
+            type="range"
+            id="rating"
+            name="rating"
+            min="1"
+            max="5"
+            list="ratings"
+          />
+
+          <datalist id="ratings">
+            <option value="1" label="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5" label="5"></option>
+          </datalist>
+        </div>
+        <button type="submit">Submit Rating</button>
+      </form>
     </main>
 
     <footer>
